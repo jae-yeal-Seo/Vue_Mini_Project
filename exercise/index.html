@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <div class="nav-bar"></div>
+    <div id="app">
+        <div class="cart">
+            <p>Cart{{ cart }}</p>
+        </div>
+        <product @add-to-cart="addToCart"></product>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
+
+<!-- <p v-if="inventory>10">In Stock</p>
+                <p v-else-if="0<inventory && inventory<=10">Almost sold out!</p>
+                <p v-else>Out of Stock</p> -->
+
+<!-- 반복문에서는 키를 설정하는 것이 좋다. variant인스턴스의 Id를 Key로 사용한다. -->
