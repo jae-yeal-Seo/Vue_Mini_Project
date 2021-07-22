@@ -17,7 +17,7 @@ Vue.component("product",{
                 </div>
                 <button @click="addOneCart" 
                 :disabled="!inStock" 
-                :class="{disabledButton:!inStock}">Add o Cart</button>
+                :class="{disabledButton:!inStock}">Add To Cart</button>
             </ul>
         </div>
     </div>`,
